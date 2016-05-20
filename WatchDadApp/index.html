@@ -1,7 +1,8 @@
 <html>
 <head>
     <title>WatchDad</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> Even er tussen uit @ layout probleem -->
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
@@ -11,24 +12,29 @@
 <div id="header">
 
     <div class="logo">
-        <a href="#">Watch<span>Dad</span></a>
+        <a href="index.html">Watch<span>Dad</span></a> <!-- Home button -->
     </div>
 
 </div>
+
 <div id="container">
     <div class="sidebar">
+
         <div id=""></div>
         <ul id="nav">
             <li><a class="selected"><i class="material-icons">supervisor_account</i> Ouderprofielen</a></li>
-
-            <li><a><i class="material-icons md-light">settings</i> Instellingen</a></li>
-            <li><a><i class="material-icons md-light">help</i> Help</a></li>
+            <li><a href="instellingen.html"><i class="material-icons md-light">settings</i> Instellingen</a></li>
+            <li><a href="help.html"><i class="material-icons md-light">help</i> Help</a></li>
             <hr>
-            <li><a><i class="material-icons md-light">settings</i> Account instellingen</a></li>
+            <li><a href="index.html"><i class="material-icons md-light">settings</i> Account instellingen</a></li>
         </ul>
+
     </div>
+
     <div class="content">
-        <h1>Profielen</h1>
+
+        <h1>Ouderprofielen</h1>
+
         <article class="profile-card">
             <div class="image-wrapper">
                 <img src="assats/images/old_person1.jpg">
@@ -36,6 +42,7 @@
             <h3 class="info">Oma Willie</h3>
             <div class="profile-button"><a href="lokaties.html">Bekijk profiel</a></div>
         </article>
+
         <article class="profile-card">
             <div class="image-wrapper">
                 <img src="assats/images/old_person3.jpg">
@@ -50,6 +57,7 @@
             <h3 class="info">Opa Wim</h3>
             <div class="profile-button"><a href="lokaties.html">Bekijk profiel</a></div>
         </article>
+
     </div>
 </div>
 </body>
