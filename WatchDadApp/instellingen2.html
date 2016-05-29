@@ -1,0 +1,293 @@
+<html>
+<head>
+    <title>Instellingen profielen</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> Even er tussen uit @ layout probleem -->
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div id="header">
+
+    <div class="logo">
+        <!-- Home button -->
+        <a href="index.html">Watch<span>Dad</span></a> <
+    </div>
+
+</div>
+<!-- Sidebar -->
+<div id="container">
+    <div class="sidebar">
+        <div id=""></div>
+        <ul id="nav">
+            <li><a href="index.html"><i class="material-icons">supervisor_account</i> Ouderprofielen</a></li>
+            <li><a class="selected"><i class="material-icons md-light">settings</i> Instellingen</a></li>
+            <li><a><i class="material-icons md-light">help</i> Help</a></li>
+            <hr>
+            <li><a><i class="material-icons md-light">settings</i> Account instellingen</a></li>
+        </ul>
+    </div>
+
+    <!--Inhoud pagina-->
+
+    <div class="content">
+        <h1>Instellingen profielen</h1>
+
+        <br>
+        Hier onder kunt u een agenda item aanbrengen voor het profiel dat u beheert.
+        <br>
+        <br>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#myModal">Nieuw agenda-item</button>
+<!-- knop moet nog veranderd worden in size-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Nieuw roosteritem</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="form container">
+                            <div class="form-group">
+                                <label for="sel2">Welke camera wilt u gebruiken?</label>
+                                <br>
+                                <select style="width: 200px" class="form-control" id="sel2">
+                                    <option>Woonkamer1</option>
+                                    <option>Woonkamer2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group inline">
+                                <label for="sel1">Waar wilt u op checken?</label>
+                                <select style="width: 200px" class="form-control" id="sel1">
+                                    <option>Activiteit</option>
+                                    <option>Afwezigheid</option>
+                                </select>
+                            </div>
+
+                            <div class="form-inline form-group">
+                                <label for="datum">Datum</label>
+                                <br>
+                                <input style="width: 200px" aria-labelledby="datum" class="form-control" type="date">
+                            </div>
+
+                            <div class="form-inline form-group">
+                                <label for="start-tijd">Start tijd</label>
+                                <br>
+                                <input style="width: 200px" aria-labelledby="start-tijd" class="form-control" type="time">
+                            </div>
+
+                            <div class="form-inline form-group">
+                                <label for="eind-tijd">Eind tijd</label>
+                                <br>
+                                <input style="width: 200px"  aria-labelledby="eind-tijd" class="form-control" type="time">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Opslaan</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        Hier onder kunt u een profiel onder u beheer op incatief zetten.
+        <br>
+        <br>
+
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Afwezig">Afwezigheid ouderen</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Afwezig" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Meld hier uw profiel/oudere af</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="form container">
+
+                            <div class="form-inline form-group">
+                                <label for="datum">Datum</label>
+                                <br>
+                                <input style="width: 200px" aria-labelledby="datum" class="form-control" type="date">
+                            </div>
+
+                            <div class="form-inline form-group">
+                                <label for="start-afwezigtijd">Start tijd</label>
+                                <br>
+                                <input style="width: 200px" aria-labelledby="start-tijd" class="form-control" type="time">
+                            </div>
+
+                            <div class="form-inline form-group">
+                                <label for="eind-afwezigtijd">Eind tijd</label>
+                                <br>
+                                <input style="width: 200px"  aria-labelledby="eind-tijd" class="form-control" type="time">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Opslaan</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        Vul hier extra melding ontvangers aan voor uw profielen.
+        <br>
+        <br>
+
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Ontvangers">Tooevoegen meld personen</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Ontvangers" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Meld hier uw profiel/oudere af</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="form container">
+
+                            <div class="form-inline form-group">
+
+                                <input name="action" value="submit" type="hidden">
+                                <label for="naammelder">Volledige naam</label>
+                                <br>
+                                <input name="name" size="30" type="text">
+                                <br>
+                                <label for="emailmelder">Email</label>
+                                <br>
+                                <input name="email" size="30" type="text">
+                                <br>
+
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Opslaan</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        Hier onder kunt u een extra profiel toevoegen.
+        <br>
+        <br>
+
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Profieltoevoegen">Toevoegen  beheer profiel</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Profieltoevoegen" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Meld hier uw profiel/oudere af</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="form container">
+
+                            <div class="form-inline form-group">
+
+                                <div class="form-inline form-group">
+
+                                    <label for="usr">Name:</label>
+                                    <BR>
+                                    <input type="text" class="form-control" id="usr">
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="form-inline form-group">
+                                    <label for="ProfielGebdatum">Geboortedatum</label>
+                                    <br>
+                                    <input style="width: 200px" aria-labelledby="datum" class="form-control" type="date">
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="form-inline form-group">
+                                    <label for="ProfielFoto">Profielfoto</label>
+                                    <input type="file" name="fileToUpload" id="fileToUpload">
+                                </div>
+
+                                <br>
+
+                                <div class="form-inline form-group">
+
+                                    Hier kan u extra profielen toevoegen aan u account.
+                                    Daarnaast kan u ook een profiel foto toevoegen om het meer persoonlijk te maken.
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Opslaan</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+    </div>
+</body>
+</html>
